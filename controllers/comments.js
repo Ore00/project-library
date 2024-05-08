@@ -1,4 +1,3 @@
-const commentSchema = require("../models/comments.js");
 const { findBookById } = require("./books.js");
 
 const createComment = async (bookId, commentText) => {
