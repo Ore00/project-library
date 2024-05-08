@@ -7,7 +7,5 @@ const commentSchema = new db.mongoose.Schema({
     required: true,
   },
 });
-// const Comment = db.mongoose.model("Comment", commentSchema);
 
 exports.commentSchema = commentSchema;
-// exports.Comment = Comment;
