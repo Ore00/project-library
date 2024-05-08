@@ -1,12 +1,12 @@
-const { Comment } = require("../models/comments.js");
+const commentSchema = require("../models/comments.js");
 const { findBookById } = require("./books.js");
 
 const createComment = async (bookId, commentText) => {
   try {
     let result;
-    let comments = new Comment({
+    let comments = {
       text: commentText,
-    });
+    };
     let book = await findBookById(bookId);
 
     if (book == null) {

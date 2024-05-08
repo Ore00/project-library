@@ -59,16 +59,16 @@ suite("Functional Tests", function () {
               assert.property(
                 res.body,
                 "_id",
-                "Book in array should contain _id"
+                "Book in array should contain _id",
               );
               assert.property(
                 res.body,
                 "title",
-                "Book in array should contain title"
+                "Book in array should contain title",
               );
               assert.isUndefined(
                 res.body.comments,
-                "Book should not contain comments"
+                "Book should not contain comments",
               );
               done();
             });
@@ -95,17 +95,17 @@ suite("Functional Tests", function () {
               assert.property(
                 res.body[0],
                 "commentcount",
-                "Books in array should contain commentcount"
+                "Books in array should contain commentcount",
               );
               assert.property(
                 res.body[0],
                 "title",
-                "Books in array should contain title"
+                "Books in array should contain title",
               );
               assert.property(
                 res.body[0],
                 "_id",
-                "Books in array should contain _id"
+                "Books in array should contain _id",
               );
               done();
             });
@@ -133,17 +133,17 @@ suite("Functional Tests", function () {
                 assert.property(
                   res.body,
                   "comments",
-                  "Books in array should contain commentcount"
+                  "Books in array should contain commentcount",
                 );
                 assert.property(
                   res.body,
                   "title",
-                  "Books in array should contain title"
+                  "Books in array should contain title",
                 );
                 assert.property(
                   res.body,
                   "_id",
-                  "Books in array should contain _id"
+                  "Books in array should contain _id",
                 );
               })
               .catch(function (err) {
@@ -167,22 +167,22 @@ suite("Functional Tests", function () {
                   assert.property(
                     res.body,
                     "comments",
-                    "Books in array should contain commentcount"
+                    "Books in array should contain commentcount",
                   );
                   assert.property(
                     res.body,
                     "title",
-                    "Books in array should contain title"
+                    "Books in array should contain title",
                   );
                   assert.property(
                     res.body,
                     "_id",
-                    "Books in array should contain _id"
+                    "Books in array should contain _id",
                   );
                   assert.notProperty(
                     res.body,
                     "__v",
-                    "Books in array should not contain __v"
+                    "Books in array should not contain __v",
                   );
                 })
                 .catch(function (err) {
@@ -210,7 +210,7 @@ suite("Functional Tests", function () {
                   done();
                 });
             });
-          }
+          },
         );
 
         suite("DELETE /api/books/[id] => delete book object id", function () {
@@ -241,7 +241,7 @@ suite("Functional Tests", function () {
               });
           });
         });
-      }
+      },
     );
   });
 });
